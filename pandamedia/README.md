@@ -1,0 +1,2 @@
+# Taalaibekov-Nazim
+project

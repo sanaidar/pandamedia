@@ -1,0 +1,199 @@
+h1,h2,h3
+  text-transform: uppercase
+  font-weight: 300
+
+header
+  background: url(img/header-bg.jpg) 50% 50% no-repeat
+  height: 600px
+  background-size: cover
+  background-position: center    
+  background-attachment: fixed
+  .container
+    padding-left: 5px
+    .top-header
+      .logo
+        img
+          width: 250px
+          margin-top: 40px
+      nav
+        text-align: right
+        margin-top: -50px
+        ul
+          list-style: none
+          li
+            display: inline-block
+            margin: 0 2%
+          a 
+            display: inline-block
+            text-decoration: none
+            text-transform: uppercase
+            color: rgb(255, 255, 255)
+            font-size: 90%
+            border-bottom: 2px solid transparent
+            transition: border-bottom 0.2s
+            padding-bottom: 5px
+            font-weight: 500
+            cursor: pointer
+          a:hover
+            border-bottom: 2px solid $orange-color
+          a.maz
+            color: $orange-color
+  
+
+    h1
+      padding-top: 130px
+      margin-bottom: 20px
+      color: #fff
+      font-size: 240%
+      word-spacing: 4px
+      letter-spacing: 1px
+      text-align: center
+      margin: 0.67em 0
+    ul
+      list-style: none
+      margin-left: 30%
+      li
+        display: inline-block
+        margin: 0.1%
+        a.bg
+          display: inline-block
+          text-decoration: none
+          background-color: $orange-color
+          border: 1px solid $orange-color
+          color: #fff
+          margin-right: 15px
+          padding: 10px 30px
+          border-radius: 50px
+          transition: 0.5s
+        a.bg:hover
+          background-color: #d86500
+        a.o
+          display: inline-block
+          text-decoration: none
+          padding: 10px 30px
+          font-weight: 300
+          text-decoration: none
+          transition: 0.5s
+          margin-top: 20px
+          color: $orange-color
+          border: 1px solid $orange-color
+          border-radius: 50px
+        a.o:hover
+          color: #fff
+          background-color: $orange-color
+    .menu-btn 
+      position: absolute
+      top: 70px
+      right: 20px
+      display: inline-block
+      width: 32px
+      height: 32px
+      display: none
+      transition: 0.3s
+    .not-active 
+      background: url(img/menu.png) 50% 50% no-repeat
+    .is-active 
+      background: url(img/cancel.png) 50% 50% no-repeat    
+.header-active 
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  background-color: rgba(69, 64, 64, 0.93)
+  -webkit-box-shadow: 0 2px 2px #efefef
+  box-shadow: 0 2px 2px #efefef
+  z-index: 9999
+  padding: 0 4%
+  transition: 0.5s
+  .logo
+    margin-top: -15px
+    img
+      width: 200px !important
+  nav
+    ul
+      li
+        a
+          padding-top: 3px !important
+
+          
+/*--------------*/
+/*Section-team--*/
+/*--------------*/
+
+
+.section-team
+  text-align: center
+  margin-bottom: 100px
+  .container
+    padding: 0 5px
+    h2
+      font-size: 180%
+      word-spacing: 2px
+      text-align: center
+      margin-bottom: 30px
+      letter-spacing: 1px
+    h2:after 
+      display: block
+      height: 2px
+      background-color: #e67e22
+      content: " "
+      width: 100px
+      margin: 0 auto
+      margin-top: 30px
+    .flex-item-block
+      display: flex
+      flex-wrap: wrap
+      flex-direction: row
+      justify-content: space-between
+      z-index: 9999
+      .item
+        width: 22%
+        margin-top: 30px
+        img.leaves
+          width: 88px
+          margin-bottom: -13px
+          margin-top: -17px
+        img.graphic
+          margin-top: -10px
+          width: 70px
+          margin-bottom: 0px
+        a
+          display: block
+          text-decoration: underline
+          font-size: 110%
+          margin-top: 30px
+          color: $dark-text-color
+          padding-bottom: 5px
+          transition: 0.5s
+          text-transform: uppercase
+        a:hover
+          color: $orange-color
+        p
+          font-size: 90%
+          line-height: 145%
+          
+/*--------------*/
+/*MEAL-SHOWCASE--*/
+/*--------------*/
+
+.meals-showcase
+  margin-left: -40px
+  ul
+    list-style: none
+    li
+      width: 25%
+      float: left
+      overflow: hidden
+      background-color: #000
+      img
+        width: 100%
+        height: auto
+        display: block
+        transform: scale(1.15)
+        opacity: 0.7
+        transition: 1s
+    li:hover
+      opacity: 1
+      img:hover
+          transform: scale(1)
+          opacity: 1

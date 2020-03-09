@@ -1,0 +1,86 @@
+/*--------------*/
+/*CONTACT--*/
+/*--------------*/
+
+.contact
+  font-size: 110%
+  h3
+    font-size: 180%
+    word-spacing: 2px
+    text-align: center
+    margin-bottom: 30px
+    letter-spacing: 1px
+    padding-top: 30px
+  h3:after 
+    display: block
+    height: 2px
+    background-color: #e67e22
+    content: " "
+    width: 100px
+    margin: 0 auto
+    margin-top: 30px 
+  ul
+    list-style: none
+    display: inline-block
+    float: left
+    position: relative
+    margin-left: 30px
+    li
+      a
+        text-decoration: none
+        color: $dark-text-color
+        transition: 0.5s
+      a:hover
+        color: $orange-color
+  .adress
+    float: left
+    margin-left: 15%
+    display: inline-block
+    margin-top: 25px
+    color: $dark-text-color
+    width: 25%
+    position: relative
+  .email
+    text-align: right
+    margin-left: 10%
+    float: left
+    position: relative
+    a
+      text-decoration: none
+      display: inline-block
+      color: $dark-text-color
+      transition: 0.5s
+    a:hover
+      color: $orange-color
+  ul:before
+    content: ''
+    position: absolute
+    width: 32px
+    height: 32px
+    left: -7px
+    top: 0
+    background: url(img/phone-receiver.png) 50% 50% no-repeat 
+  .adress:before
+    content: ''
+    position: absolute
+    width: 32px
+    height: 32px
+    left: -46px
+    top: 0
+    background: url(img/pin.png) 50% 50% no-repeat 
+  .email:before  
+    content: ''
+    position: absolute
+    width: 32px
+    height: 32px
+    left: -52px
+    top: 0
+    background: url(img/message.png) 50% 50% no-repeat
+    
+    
+    
+    
+.map
+  width: 100%
+  min-height: 500px
+  margin-top: 30px
